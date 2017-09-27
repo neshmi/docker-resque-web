@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if [[ $# -eq 0 ]] ; then
+    echo 'Syntax: bin/build VERSION'
+    echo 'Example: bin/build 1.23.0'
+    exit 0
+fi
+
+docker build . --build-arg resqueversion=$1 -t resque-web:$1
