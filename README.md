@@ -1,4 +1,4 @@
-# Docker for building Resque Web images for particular versions
+# Dockerfile and script for building Resque Web containers for particular versions
 
 Syntax:
 
